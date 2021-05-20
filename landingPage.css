@@ -1,0 +1,265 @@
+/* .containers{
+    background-color: #c8eadf;
+    padding:12%;
+} */
+
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+.homepage{
+    background-color: #c8eadf;
+    padding:4% 12%;
+
+}
+
+.homepageHeading{
+    /* font-family: "DM Sans", sans-serif; */
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #333333;
+}
+
+.homePageSubHeading{
+    width: 75%;
+    /* display: flex; */
+    margin-left: 12.5vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    font-weight: 400;
+    line-height: 31px;
+    font-size: 22px;
+    color: #444444;   
+}
+
+.cardVideo .card{
+    border-radius: 16px;
+}
+
+.btn{
+    background-image: linear-gradient(126deg,#2ac294,#0e8f84);
+    color: white;
+}
+
+.cards{
+    border-radius: 16px;
+}
+
+.far{
+    color: #0e8f84;
+}
+
+.workshop{
+    background-color:#c0e1d6;
+    padding:4% 12%;
+}
+
+.workshop .card{
+    background-color: #c8eadf;
+}
+
+.workshop .fas{
+    color: #0e8f85;
+}
+
+/* .far{
+    color: green;
+}
+
+.card{
+    border-radius: 20px;
+} */
+
+.afterRegistering{
+    padding:4% 12%;
+}
+
+.afterRegistering .far{
+    color: green;
+}
+
+.afterRegistering .card{
+    border-radius: 16px;
+}
+
+.coupons{
+    padding:4% 12%;
+    background-color: #c8eadf;
+}
+
+.clockdiv{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clockdiv div{
+ position: relative;
+ width: 15vw;
+ height: 15vh;
+ line-height: 100px;
+ text-align: center;
+ /* background: #333; */
+ background-image: linear-gradient(133deg,#0f8f85,#27bd93);
+ color: #fff;
+ margin:0 15px;
+ font-size: 30px;
+ font-weight: 500;
+}
+
+.clockdiv div:before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    width: 100%;
+    height: 35px;
+    /* background: #ff0; */
+    background-image: linear-gradient(133deg,#0f8f85,#27bd93);
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.clockdiv div#days:before{
+    content: 'Days';
+}
+.clockdiv div#hours:before{
+    content: 'Hours';
+}.clockdiv div#minutes:before{
+    content: 'Minutes';
+}.clockdiv div#seconds:before{
+    content: 'Seconds';
+}
+
+.whyGolden{
+    padding:4% 12%;
+    background-color: #032d30;
+    color: white;
+}
+
+.GoldenCards .card{
+    background-color: hsla(0,0%,100%,.1);
+    color: white;
+}
+
+.believeThem{
+    padding:12%;
+    background-color: #c8eadf;
+}
+
+.heading{
+    color: #0e8f84;
+    font-weight: 700;
+}
+
+.checkboxes{
+    padding:4% 12%;
+    background-color: #c2e5da;
+}
+
+.checkboxes .card{
+    background-color: hsla(0,0%,100%,.4);
+    border-radius: 16px;
+    border: .5px solid rgba(3,45,48,.15)
+}
+
+.check{
+    height: 25px;
+    width: 25px;
+    /* justify-self: center;
+    align-items: center;
+    align-self: center; */
+    /* justify-content: center; */
+    border: 1px solid #9dd6c4;
+    color: #2ac294;
+    align-items: center;
+}
+
+.meetConsultant{
+    padding:4% 12%;
+    background-image: linear-gradient(140deg,#29c194,#0e8f84);
+}
+
+.faq{
+    padding:4% 12%;
+    background-color: #c8eadf;
+}
+.accordion-item{
+    margin-bottom: 10px;
+    background-image: linear-gradient(90deg,rgba(41,193,148,.2),rgba(14,143,132,.2));
+}
+
+.accordion-button{
+    /* background-color: #6aece2; */
+    background-image: linear-gradient(90deg,rgba(41,193,148,.2),rgba(14,143,132,.2));
+}
+
+.accordion-header{
+    background-color: #6aece2;
+    /* background-image: linear-gradient(90deg,rgba(41,193,148,.2),rgba(14,143,132,.2)); */
+}
+
+
+@media (min-width:300px) and (max-width:449.99px){
+
+    .homepage{
+        padding: 4% 8%;
+    }
+
+    .homepageHeading{
+        text-align: center;
+        font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+    }
+    .homePageSubHeading{
+        text-align:justify;
+        font-size: 20px !important;
+    }
+
+    .cardVideo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstCard{
+        border-radius: 16px;
+    }
+
+    .video{   
+        padding: 8% 0%;     
+        order: -1;
+    }
+
+    .register{
+        padding: 4% 0%;
+    }
+    
+
+    .clockdiv div:before{       
+        font-size: 10px;        
+    }
+    .clockdiv div{
+        position: relative;
+        width: 15vw;
+        height: 10vh;
+        line-height: 100px;
+        text-align: center;
+        /* background: #333; */
+        background-image: linear-gradient(133deg,#0f8f85,#27bd93);
+        color: #fff;
+        margin:0 15px;
+        font-size: 30px;
+        font-weight: 500;
+       }
+
+       .clockdiv button{
+           margin-top: 20%;
+       }
+}
