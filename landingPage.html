@@ -17,571 +17,912 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./landingPage.css">
+    <!-- <script src="./landingPage.js"></script> -->
 
     <script>
-    var countDownDate = new Date("May 21, 2021 23:59:00").getTime();
-    var interval = setInterval(function() {
-    var now = new Date().getTime();
-    var timeleft = countDownDate - now;
-    var days = Math.floor(timeleft / (1000*60*60*24));
-    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000); 
+        var countDownDate = new Date("May 24, 2021 23:59:00").getTime();
+        var interval = setInterval(function () {
+            var now = new Date().getTime();
+            var timeleft = countDownDate - now;
+            var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-   },1000);
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+        }, 1000);
 
     </script>
 </head>
 
 <body>
     <!-- <div class="containers"> -->
-        <section class="homepage">
-            <div class="text-center">
-                <p class=" p-4 homepageHeading">
-                    <!-- 2-Day Performance <br> Marketing  <b>Kickstarter</b> <br>     Workshop -->
-                    Gurgaon’s best <b>real estate inventory</b>  at lowest prices
-                </p>
+    <section class="homepage">
+        <div class="text-center">
+            <!-- <img src="assets/arrow.svg" width="15%" height="15%" style="float: right; margin-top: 8%;" alt=""> -->
 
-                <p class=" homePageSubHeading">
-                    <!-- Learn secret strategies & tactics that <b>generated over INR 650 crores in <br> revenue</b>  for various big & small brands -->
-                    Choose you dream house from an <b>exclusive inventory</b> of top  acclaimed builders across
-                    Gurgaon backed by <b>20+ years</b>  of real estate consultants.
-                </p>
-            </div>
-
-            <div class="cardVideo">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-3 card m-1 firstCard" style="width: 19rem; float: left;">
-                                <div class="card-body ">
-                                    <h5 class="card-title"> 50+ aclaimed builders</h5>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-3 card m-1" style="width: 19rem; ">
-                                <div class="card-body">
-                                    <h5 class="card-title"> Exclusive inventories</h5>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row cards">
-
-                            <div class="col-sm-3 card m-1" style="width: 19rem; float: left;">
-                                <div class="card-body">
-                                    <h5 class="card-title"> &nbsp;&nbsp; Lowest prices</h5>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-3 card m-1" style="width: 19rem; ">
-                                <div class="card-body">
-                                    <h5 class="card-title">&nbsp;&nbsp; 20+ years of experience</h5>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row cards">
-
-                            <div class="col-sm-3 card m-1" style="width: 19rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Gaurav Kapur</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Commodi, quos?
-                                        Exercitationem deleniti facere quasi tempora dicta nisi provident in placeat?
-                                        Mollitia
-                                        placeat dolorem soluta explicabo beatae tempore voluptatibus, debitis vel.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-3 m-1 card" style="width: 19rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Akash</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                                        quia
-                                        dolorem placeat quam velit earum culpa non natus! Alias aliquid commodi
-                                        explicabo
-                                        ratione dicta repellendus, doloremque repudiandae. Quas, dignissimos sequi.</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="col-sm-4 video">
-                        <div class="card">
-                            <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0" height="250px"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-
-                        </div>
-                        <div class="para">
-                            <p class="text-center fs-4 register">Register yourself before <b>20 May</b> to unlock amazing discounts on
-                                projects
-                                listed</p>
-
-                            <button class="btn w-100 p-3 rounded mt-0">Button</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="builders mt-5">
-                <p class="text-center fs-1" style="margin: 5% 0%;">Builders we work with</p>
-                <div class="trained  " style="margin-left: 8%;">
-                    <img src="assets/Godrej.png" alt="" width="250px" height="150px" class="ml-3"> &nbsp;
-                    <img src="assets/AIPL.png" alt="" width="250px" height="150px" class="ml-3"> &nbsp;
-                    <img src="assets/M3M.png" alt="" width="250px" height="150px" class="ml-3"> &nbsp;
-                    <!-- <img src="assets/DLF.png" alt="" width="250px" height="150px" class="ml-3"> -->
-                </div>
-            </div>
-
-            <div class="aboutUS" style=" margin: 0% 8% 0% 8%;">
-
-                <div class="text-center fs-1 mt-5">
-                    What they have to say about us
-                </div>
-                <div class="row pt-5 pb-5 d-flex">
-                    <div class="card col-sm-3">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card col-sm-3">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card col-sm-3">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card col-sm-3">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </section>
-
-        <section class="workshop">
-            <p class="text-center fs-1">
-                Are you also facing similar difficulties finding home/ <br> Who is this for?
+            <p class=" p-4 homepageHeading">
+                <!-- 2-Day Performance <br> Marketing  <b>Kickstarter</b> <br>     Workshop -->
+                Gurgaon’s best <span class="per-title-highlight">real estate inventory</span> at lowest prices
             </p>
+
+            <p class=" homePageSubHeading">
+                <!-- Learn secret strategies & tactics that <b>generated over INR 650 crores in <br> revenue</b>  for various big & small brands -->
+                <!-- Choose you dream house from an <b>exclusive inventory</b> of top acclaimed builders across
+                Gurgaon backed by <b>20+ years</b> of real estate consultants. -->
+
+                Top Real Estate Consultants in Gurgaon | <b>Expert guidance</b> to help you buy your dream home with assured valuation and timely possession built by <b>top builders</b> in Gurgaon.
+            </p>
+        </div>
+
+        <div class="cardVideo ">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="card mb-2">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-3x fa-user-graduate"></i> &nbsp;&nbsp; Searching a
-                                new home for self use</h5>
-                            <p class="card-text">Who wants to buy a perfect home for their family in a good vicinity
-                                with all the top notch facilities</p>
+                <div class="col-sm-8 ">
+                    <div class="row ">
+                        <div class="col-sm-3 mb-3 buttons-cards">
+                            <div class="text-center m-2">
+                                <img src="assets/architecture.png" width="15%" height="12%" alt="">&nbsp; 50+ aclaimed
+                                builders
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mb-2">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-3x fa-user-graduate"></i>&nbsp;&nbsp; Searching for
-                                a perfect commercial real estate investment in top commercial spaces of gurgaon</h5>
-                            <p class="card-text">Who wants to increase their revenue-generation opportunities, acquire
-                                bigger clients</p>
+                        <div class="col-sm-3 mb-3 buttons-cards">
+                            <div class="text-center m-2" >
+                                <img src="assets/inventory.png" width="15%" height="12%" alt="">&nbsp; Exclusive inventories
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-sm-6">
-                    <div class="card mb-2">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-3x fa-user-graduate"></i>&nbsp;&nbsp; Searching a
-                                home for rental income</h5>
-                            <p class="card-text">Who wants to buy a home to generate rental income</p>
+                    </div>
+
+                    <div class="row ">
+
+                        <div class="col-sm-3 mt-2 mb-3 buttons-cards">
+                            <div class="text-center m-2">
+                                <img src="assets/rupee.png" width="15%" height="12%" alt="">&nbsp; Lowest prices in market
+                            </div>
                         </div>
+                        <div class="col-sm-3 mt-2 mb-3 buttons-cards">
+                            <div class="text-center m-2">
+                                <img src="assets/clock.png" width="15%" height="12%" alt="">&nbsp; 20+ years of
+                                experience
+
+                            </div>
+                        </div>                      
                     </div>
-                    <div class="card mb-2">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-3x fa-user-graduate"></i>&nbsp;&nbsp; Searching for
-                                a perfect commercial real estate investment in top commercial spaces of gurgaon</h5>
-                            <p class="card-text">Who wants to increase their revenue-generation opportunities, acquire
-                                bigger clients</p>
+
+                    <div class="row consultantCard">
+                        <div class="col-sm-3   m-1" style="width: 19rem;">
+                            <img src="assets/Gaurav-Kapur_1.svg" class="card-img-tops" alt="...">
                         </div>
-                    </div>
-                </div>
 
-            </div>
-
-            <button class="btn w-100 p-3 rounded mt-5">Kickstart your home search journey now!- call to action</button>
-
-            <p class="text-center fs-3 mt-5"> Register yourself before <b>19 May</b> to unlock amazing discounts on
-                projects listed</p>
-
-        </section>
-
-        <section class="afterRegistering">
-            <p class="text-center fs-1 mt-5">What will you get after registering?</p>
-
-            <div class="card mb-2">
-                <div class="card-body">
-
-                    <h5 class="card-title"><i class="far fa-3x fa-check-square"></i> &nbsp; &nbsp;Best Residentail
-                        projects in gurgaon with all details </h5>
-                </div>
-            </div>
-
-            <div class="card mb-2">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="far fa-3x fa-check-square"></i> &nbsp; &nbsp;Best commercial
-                        projects in gurgaon </h5>
-                </div>
-            </div>
-            <div class="card mb-2">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="far fa-3x fa-check-square"></i> &nbsp; &nbsp; New upcoming
-                        affordable projects in Gurgaon </h5>
-                </div>
-            </div>
-            <div class="card mb-2">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="far fa-3x fa-check-square"></i> &nbsp; &nbsp;Extra Bonus- A e-book
-                        on insights of gurgaon real estate market </h5>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="coupons">
-            <p class="text-center fs-1">
-                Unlock bonuses worth <br>
-                <span style="color: #0e8f84;font-size: 38px;line-height: 120%;font-weight: 700"> ₹25,000</span>
-            </p>
-          
-            <div class="coupon">
-                <div class="row">
-                    <div class="col-sm-8 mt-2">
-                        <img src="assets/Large.png"  alt="">
-                    </div>
-                    <div class="col-sm-4 mt-2">
-                        <img src="assets/Small.png" alt="">
-                    </div>
-                    <!-- <div class="col-sm-4 mt-4">
-                        <img src="assets/Small.png" alt="">
-                    </div>
-                    <div class="col-sm-4 mt-4">
-                        <img src="assets/Small.png" alt="">
-                    </div> -->
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-4 mt-2">
-                        <img src="assets/Small.png" alt="">
-                    </div>
-                    <div class="col-sm-4 mt-2">
-                        <img src="assets/Small.png" alt="">
-                    </div>
-                    <div class="col-sm-4 mt-2">
-                        <img src="assets/Small.png" alt="">
-                    </div>
-                </div>
-
-            </div>
-
-            <p class="text-center fs-2 font-bold mt-5">
-                Time Is Running Out. Grab Your Spot Fast!
-            </p>
-
-            <div id="clockdiv" class="clockdiv">
-                <div>
-                  <span class="days"></span>
-                  <div class="smalltext" id="days">NA</div>
-                </div>
-                <div>
-                  <span class="hours"></span>
-                  <div class="smalltext" id="hours">NA</div>
-                </div>
-                <div>
-                  <span class="minutes"></span>
-                  <div class="smalltext" id="minutes">NA</div>
-                </div>
-                <div>
-                  <span class="seconds"></span>
-                  <div class="smalltext" id="seconds">NA</div>
-                </div>
-              </div>
-
-          <button class="btn  p-3 rounded" style="width: 75%; margin-left: 12.5%; margin-top: 15%;">Kickstart your home search journey now!- call to action</button>
-
-
-        </section>
-
-        <section class="whyGolden">
-            <p class="text-center fs-1">Why Golden assets?</p>
-
-            <div class="row GoldenCards">
-                <div class="col-sm-6">
-                    <div class="card m-4">
-                        <div class="card-body ">
-                            <h5 class="card-title">50+ top builders </h5>
-                        </div>
-                    </div>
-                    <div class="card m-4">
-                        <div class="card-body ">
-                            <h5 class="card-title">20+ years of industry experiences</h5>
-                        </div>
-                    </div>
-                    <div class="card m-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Top inventory</h5>
+                        <div class="col-sm-3 m-1  mt-3 " style="width: 19rem;">
+                            <img src="assets/Harjit-Singh_1.svg" class="card-img-tops" alt="...">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="card m-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Best locations</h5>
-                        </div>
-                    </div>
-                    <div class="card m-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Best income returns</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="believeThem">
-            <p class="text-center fs-1 heading">
-                You may not believe me, but you can believe them
-            </p>
-            <p class="text-center fs-3">
-                Experiences shared by people who previously bought from us
-            </p>
-
-
-            <div class="aboutUS" style=" margin: 0% 8% 0% 8%;">
-
-                <!-- <div class="text-center fs-1 mt-5">
-                    What they have to say about us
-                </div> -->
-                <div class="row pt-5 pb-5 d-flex">
-                    <div class="card col-sm-3">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                <div class="col-sm-4 video">
+                    <div class="card youtubeVideo">
+                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0" height="250px"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div class="card col-sm-3">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <div class="para">
+                        <p class="text-center fs-4 register">Register yourself before <span class="per-title-highlight">May 22, 2021</span> to unlock amazing
+                            discounts on top projects</p>
+                            
+                        <button class="unlockBtn w-100 p-3 rounded mt-0 fw-bold" onclick="showModal();">Unlock your dream home</button>
                     </div>
-                    <div class="card col-sm-3">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="builders mt-5">
+            <!-- <p class="text-center fs-1" style="margin: 5% 0%;">Builders we work with</p> -->
+            <div class="buildersLargeImg">
+                <img src="assets/Compnay-Large.svg" alt="">
+            </div>
+            <div class="buildersSmallImg">
+                <img src="assets/Compnay-Small.svg" alt="">
+            </div>
+        </div>
+
+        <div class="aboutUS" style=" margin: 0% 8% 0% 8%;">
+
+            <div class="text-center mt-5 fw-bold" style="font-size: 28px; line-height: 34px; font-weight: 500;" >
+                What they have to say about us
+            </div>
+            <div class="row pt-5 pb-5 d-flex">
+                <div class="card col-sm-4 mb-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-4 mb-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-4 mb-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+<!-- 
+        <div class="select-box">    
+            <label for="select-box1" class="label select-box1"><span class="label-desc">Property Type</span> </label>
+           <select >
+           <option value="Residential">Residential</option>
+           <option value="Commercial" selected>Commercial</option>
+           </select> 
+           
+           <h2>Result</h2>
+          </div> -->
+
+         
+
+
+    </section>
+
+    <section class="workshop">
+        <p class="text-center fs-2">
+            <b> Who is this for ?</b>
+        </p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="cards mb-2 p-3" style="display: flex;">  
+                    <div>
+                        <img src="assets/selfUseHome.svg" width="100%"  alt="">
                     </div> 
-                    <div class="card col-sm-3">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card col-sm-3 mt-2">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card col-sm-3 mt-2">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div> 
-                    <div class="card col-sm-3 mt-2">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card col-sm-3 mt-2">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-
+                    <div style="padding-left: 10px;">
+                        <h5 class="card-title"> <b>Homebuyers, the end-users</b> </h5>
+                        <p class="card-text">Who are Searching for their first family home in your budget by Gurgaon's Award-Winning developers?</p> 
+                    </div>                                                
                 </div>
 
-            </div>
-
-            <button class="btn  p-3 rounded mt-5" style="width: 75%; margin-left: 12.5%;">Kickstart your home search journey now!- call to action</button>
-
-        </section>
-
-        <section class="checkboxes">
-            <p class="text-center fs-1 pb-5">
-                Please check all boxes where your answer is YES!
-            </p>
-          
-            <div class="boxes">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h5 class="card-title"><input type="checkbox" class="check"> &nbsp;&nbsp; Finding it difficult to crack best deal</h5>
-                                
-                            </div>
-                        </div>
-
+                <div class="cards mb-2 p-3" style="display: flex;">
+                    <div>
+                        <img src="assets/Buy-to-let investors.svg" width="100%" alt="">
                     </div>
-                    <div class="col-sm-6">
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h5 class="card-title"><input type="checkbox" class="check"> &nbsp;&nbsp; Find accredited builders</h5>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h5 class="card-title"><input type="checkbox" class="check"> &nbsp;&nbsp; Less brokerage</h5>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h5 class="card-title"><input type="checkbox" class="check"> &nbsp;&nbsp; Top inventory</h5>
-                               
-                            </div>
-                        </div>
-                    </div>
+                    <div style="padding: 10px;">
+                        <h5 class="card-title"> <b>Long-term investors</b> </h5>
+                        <p class="card-text">Who are expecting great returns from top commercial projects of Gurgaon over a period of time? </p>                    
+                    </div>                     
                 </div>
             </div>
 
-            <p class="text-center fs-2 mt-5">
-                If you checked ANY of the boxes above, then you’re invited to register😁
-            </p>
-
-            <button class="btn  p-3 rounded mt-5" style="width: 75%; margin-left: 12.5%;">Kickstart your home search journey now!- call to action</button>
-
-        </section>
-
-
-        <section class="meetConsultant">
-            <p class="text-center fs-1">
-                Meet your Consultants
-            </p>
-
-            <div class="consultants">
-                <div class="row">
-                    <div class="col-sm-12  card m-1" >
-                        <img src=".." height="50px" width="50px" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center fs-2">Gaurav Kapur</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Commodi, quos?
-                                Exercitationem deleniti facere quasi tempora dicta nisi provident in placeat?
-                                Mollitia
-                                placeat dolorem soluta explicabo beatae tempore voluptatibus, debitis vel.</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
+            <div class="col-sm-6">
+                <div class="cards mb-2 p-3" style="display: flex;">
+                    <div>
+                        <img src="assets/homeForRentalIncome.svg" width="100%" alt="">
                     </div>
-
-                    <div class="col-sm-12  card m-1" >
-                        <img src="..." height="150px"  class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center fs-2">Gaurav Kapur</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Commodi, quos?
-                                Exercitationem deleniti facere quasi tempora dicta nisi provident in placeat?
-                                Mollitia
-                                placeat dolorem soluta explicabo beatae tempore voluptatibus, debitis vel.</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
+                     <div style="padding: 10px;">
+                        <h5 class="card-title"><b>Buy-to-let investors</b> </h5>
+                        <p class="card-text">Who wants to buy a second home in order to generate steady rental income?</p>                    
+                     </div>
+                </div>
+                <div class="cards mb-2 p-3" style="display: flex;">
+                    <div>
+                        <img src="assets/Homebuyers, Luxury Homes.svg" width="50%"  alt="">
                     </div>
+                    <div style="margin-left: -17%;">
+                        <h5 class="card-title"><b>Homebuyers, Luxury Homes</b> </h5>
+                        <p class="card-text">Who want a home that is layered in luxury?</p>
+                    </div>
+                     
+                    
                 </div>
             </div>
 
-            <p class="text-center fs-3 text-white p-5">
-                "Why compromise while buying a house when you could have a dream home as per your demands" <br> <br>
+        </div>
 
-                "We have helped 5000+ families to find their dreams homes with top builders"
-            </p>
+        <button class="btns w-50 p-3 rounded mt-5 buttons" onclick="showModal();" ><b>Kickstart your home search journey now!</b></button>
 
-            <div class="builders mt-5">
-                <!-- <p class="text-center fs-1" style="margin: 5% 0%;">Builders we work with</p> -->
-                <div >
-                    <img src="assets/Godrej.png" alt=""   class="col-sm-3"> 
-                    <img src="assets/AIPL.png" alt=""   class="col-sm-3"> 
-                    <img src="assets/M3M.png" alt=""   class="col-sm-3"> 
-                    <!-- <img src="assets/DLF.png" alt=""   class="col-sm-3"> -->
-                </div>
-            </div>
-        </section>
-    <!-- </div> -->
+        <p class="text-center mt-3 register"> Register yourself before <span class="per-title-highlight">May 25, 2021</span> to unlock amazing discounts on top
+            projects</p>
 
-    <section class="faq">
-         <p class="text-center fs-1">
-            Frequently Asked Questions
-         </p>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
+
+         <!-- form start here    -->
+         <!-- <div class="wrap center"> 
+            <div class="wrap-label">
+               <label for="name">Your Name</label>
+               <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
+            <input type="text" id="name" >
           </div>
+          <div class="wrap center"> 
+            <div class="wrap-label">
+               <label for="name">Your Name</label>
+               <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
+            </div>
+            <input type="text" id="name" >
+          </div><div class="wrap center"> 
+            <div class="wrap-label">
+               <label for="name">Your Name</label>
+               <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
+            </div>
+            <input type="text" id="name" >
+          </div><div class="wrap center"> 
+            <div class="wrap-label">
+               <label for="name">Your Name</label>
+               <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
+            </div>
+            <input type="text" id="name" >
+          </div> -->
 
-          <button class="btn  p-3 rounded mt-5" style="width: 75%; margin-left: 12.5%;">Kickstart your home search journey now!- call to action</button>
+
+
+          <!-- form ends here -->
+
+    </section>
+
+    <section class="afterRegistering">
+        <p class="text-center fs-2 mt-5"><b>What will you <span class="per-title-highlight">get</span> after registering ?</b></p>
+
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Best residential projects in Gurgaon with all the details 
+            </div>
+        </div>
+
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Top commercial projects in Gurgaon 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Exclusive easy payment plans 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Loan assistance from top banks 
+            </div>
+        </div>
+        
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Access to exclusive inventory from top developers 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                New upcoming affordable housing projects in Gurgaon 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Pre-booking for the newly launched projects 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Exclusive offers on booking amounts 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Negotiating a good deal with developers 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Post-sales support 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Weekly updates on popular real estate trends 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                A Bulletproof commercial investing toolkit 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Extra Bonus- A e-book on insights of Gurgaon real estate market 
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section class="coupons">
+        <p class="text-center fs-1 unlockbonus">
+            <b>Unlock bonuses worth</b> <br>
+            <span class="per-title-highlight fw-bold"> ₹1,00,000</span>
+        </p>
+
+        <div class="coupon">
+            <div class="row">
+                <div class="col-sm-8 mt-2 largeCoupon couponFirst">
+                    <img src="assets/Large.png" alt="">
+                    <div class="couponFirstText">
+                         
+                         <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1"><u>₹50,000</u></span>
+                         <p class="fs-5 fw-bold" style="line-height: 1;">Free iPhone 12 on every commercial investment.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-2 couponFirst">
+                    <img src="assets/Small.png" alt="">
+                    <div class="couponFirstText">
+                        <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1">₹20,000</span>
+                         <p class="fs-5 fw-bold" style="line-height: 1;">Exclusive 10% of on booking amount.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 mt-2 couponFirst">
+                    <img src="assets/Small.png" alt="">
+                    <div class="couponFirstText">
+                        <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1">₹15,000</span>
+                         <p class="fs-5 fw-bold" style="line-height: 1;">Post sales support for a year.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-2 couponFirst">
+                    <img src="assets/Small.png" alt="">
+                    <div class="couponFirstText">
+                        <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1">₹10,000</span>
+                         <p class="fs-5 fw-bold" style="line-height: 1;">Amazon gift vouchers on purchase.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-2 couponFirst">
+                    <img src="assets/Small.png" alt="">
+                    <div class="couponFirstText">
+                        <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1">₹5,000</span>
+                         <p class="fs-5 fw-bold" style="line-height: 1;">Golden Assets home buyer’s community.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="text-center fs-2 fw-bold mt-5 time-runing-out">
+            Time Is Running Out. Grab Your Spot Fast!
+        </p>
+
+        <div id="clockdiv" class="clockdiv">
+            <div>
+                <span class="days"></span>
+                <div class="smalltext" id="days">NA</div>
+            </div>
+            <div>
+                <span class="hours"></span>
+                <div class="smalltext" id="hours">NA</div>
+            </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="smalltext" id="minutes">NA</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext" id="seconds">NA</div>
+            </div>
+        </div>
+
+        <button class="btns  p-3 rounded buttons" onclick="showModal();" style="margin-top: 15% !important;">Kickstart your home search journey now!</button>
+
+
+    </section>
+
+    <section class="whyGolden">
+        <p class="text-center fs-1">Why Golden assets?</p>
+
+        <div class="row GoldenCards">
+            <div class="col-sm-6">
+                <div class=" cards m-4" style="display: flex;"> 
+                    <div>
+                        <img src="assets/architecture.png" alt="" width="90%">
+                    </div>   
+                    <div>
+                        <h5 class="card-title per-title-highlight"><b>50+ top builders</b></h5>
+                        <p>
+                            We help you buy your dream home with assured valuation and timely possession built by top builders in Gurgaon.
+                        </p> 
+                    </div>         
+                                           
+                </div>
+                <div class="cards m-4" style="display: flex;">   
+                    <div>
+                        <img src="assets/clock.png" width="90%" alt="">
+                    </div>      
+                    <div>
+                        <h5 class="card-title per-title-highlight"> <b>20+ years of industry experiences</b></h5> 
+                        <p>
+                            Our consultants are industry experts and can show you more properties and save you thousands when you buy a home.
+                        </p>  
+                    </div>           
+                                         
+                </div>                
+            </div>
+
+            <div class="col-sm-6">
+                <div class="cards m-4" style="display: flex;">
+                    <div>
+                        <img src="assets/inventory.png" width="90%" alt="">
+                    </div>   
+                    <div>
+                        <h5 class="card-title per-title-highlight"> <b>Top inventory</b></h5>
+                        <p>
+                            We work tirelessly with builders to get an inventory that suites your requirements.
+                        </p> 
+                    </div>                                              
+                </div>
+                <div class="cards m-4" style="display: flex;"> 
+                    <div>
+                        <img src="assets/rupee.png" width="90%" alt="">
+                    </div>                   
+                    <div>
+                        <h5 class="card-title per-title-highlight"><b>Exclusive offers and lowest prices</b></h5>
+                        <p>
+                            We offer exclusive discounts and lowest price guarantee and make your dream home a reality.
+                        </p>   
+                    </div>
+                                        
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center fs-5 paragraph per-title-highlight">
+            <p class="cards">
+                From affordable housing, Builder Floors, Plots to Luxury housing we make you doesn’t miss out on any great deal.
+            </p>
+            <p class="cards">
+                With over 20+ years of experience in industry and cordial relations with the builders we ensure assured valuation and timely possession.
+            </p>
+            <p class="cards">
+                We believe that buying or selling property is an occasion to make memories and add value to your lifestyle.
+            </p>
+            <p class="cards">
+                We understand that buying a house is a big decision. That’s why we’ve designed a service which is personalized, hassle-free and transparent, even with our prices
+            </p>
+        </div>
+    </section>
+
+
+    <section class="believeThem">
+        <p class="text-center fs-1 fw-bold per-title-highlight">
+            You may not believe me, but you can believe them
+        </p>
+        <p class="text-center fs-3" style="color: #333333; font-size: 200px; font-weight: 400; line-height: 28px;">
+            Experiences shared by people who previously bought from us
+        </p>
+        <div class="aboutUS" style=" margin: 0% 8% 0% 8%;">           
+            <div class="row pt-5 pb-5 d-flex">
+                <div class="card col-sm-3">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3 mt-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3 mt-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3 mt-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3 mt-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="btns  p-3 rounded mt-5 buttons" onclick="showModal();" >Kickstart your home search journey now!</button>
+    </section>
+
+    <section class="checkboxes">
+        <p class="text-center fs-1 pb-5">
+            Please check all boxes where your answer is YES!
+        </p>
+
+        <div class="boxes">
+            <div class="row" >
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>Finding it difficult to crack best deal with developers</h5>
+                    </div>                   
+                </div> 
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>Find accredited builders who can provide a timely possession</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>First time buying a house and don’t know how to go about the process</h5>
+                    </div>                   
+                </div>
+
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>As an investor, you want to invest in top commercial projects</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>Not getting a desired inventory as per your needs</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Not able to find a house will all the amenities you need</h5>
+                    </div>                   
+                </div>                 
+            </div> 
+            <div class="row">
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Not able to find a budget friendly home</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Not sure how to negotiate a good deal with builder?</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>Worrying about all the paper work process while booking a house?</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Worrying about timely possession?</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Do you think about which commercial projects give maximum returns?</h5>
+                    </div>                   
+                </div>               
+            </div>
+        </div>
+
+        <p class="text-center fs-4">
+            If you checked ANY of the boxes above, then you’re invited to register😁
+        </p>
+
+        <button class="btns p-3 rounded mt-5 buttons" onclick="showModal();">Kickstart your home search journey now!</button>
 
     </section>
 
 
-</body>
+    <section class="meetConsultant">
+        <p class="text-center text-white fs-1 meetOurConsultant">
+            Meet your Consultants
+        </p>
+        <div class="row gauravHarjit" style="margin-left: 15vw;">
 
+            <div class="col-sm-12   m-1" style="width: 17rem;">
+                <img src="assets/Gaurav-Kapur_1.svg" class="card-img-top" alt="...">
+    
+            </div>
+    
+            <div class="col-sm-12 m-1  mt-3" style="width: 17rem;">
+                <img src="assets/Harjit-Singh_1.svg" class="card-img-top" alt="...">
+    
+            </div>
+        </div>
+
+        <p class="text-center fs-3 text-white p-5 why">
+            "Why compromise while buying a house when you could have a dream home as per your demands" <br> <br>
+
+            "We have helped 5000+ families to find their dreams homes with top builders"
+        </p>
+
+        <div class="builders mt-1 mb-5">
+            <div class="buildersLargeImg1">
+                <img src="assets/buildersLogo.png" width="100%" alt="">
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="faq">
+        <p class="text-center fs-2 mt-3 mb-3">
+            Get the offer while it lasts!
+        </p>
+
+        <div class="row">
+            <div class="col-sm-6" style="background-color: white; border-radius: 16px;padding: 16px;">
+                <p class="text-left fs-2" >
+                    Performance Marketing Workshop Launch Offer (Save ₹2,200)
+                </p>
+                <span class="per-title-highlight fs-2">₹499 </span>  <strike>₹1,199</strike>
+                <hr>                
+                <p>
+                    <i class="fas fa-check" style="font-size: 11px;"></i> &nbsp; Enroll now and get bonuses worth ₹25,000 absolutely free. There was never a better time to grab this course.
+                </p>
+                <p>
+                    <i class="fas fa-check" style="font-size: 11px;"></i> &nbsp; Enjoy the discounted price of ₹799 and save a total of ₹2,200.
+                </p>
+                <p>
+                    <i class="fas fa-check" style="font-size: 11px;"></i> &nbsp; The launch offer expires on midnight of: May 20, 2021
+                </p>
+                <p>
+                    Note: No exceptions would be made beyond the offer expiry date. The prices would go up and no free bonuses
+                </p>
+                <button type="submit" class="btns  p-3 rounded mt-3 mb-3" onclick="showModal();" style="width: 75%; margin-left: 12.5%;">Enroll Now</button>
+            </div>
+            <div class="col-sm-6 ml-5 whatWillYouGet">
+                <p class="per-title-highlight fs-3">What you’ll get...</p>
+                 <div>                    
+                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                </div>
+                 <hr>  
+                 <div>                    
+                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                </div> <hr>
+                <div>                    
+                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                </div> <hr>
+                
+
+                <p class="per-title-highlight fs-3">And bonuses too...</p>
+                <div>                    
+                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                </div> <hr>
+                <div>                    
+                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                </div> <hr>
+                <div>                    
+                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                </div> <hr>
+               
+            </div>
+        </div>
+
+        <p class="text-center fs-1 mt-5">
+            Frequently Asked Questions
+        </p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button"  class="btns p-3 rounded mt-5 buttons"  onclick="showModal();">Kickstart your home search journey now!</button>       
+
+    </section>
+
+    <section class="footer">
+        <div class="text-center fs-5 text-white goldenLogo">
+            <img class="mb-5 " src="assets/color.svg" alt="">
+            <p style="font-size: 12px;">
+                For any support, please mail to care@goldenassets.in Our support team will get back to you within 24 hours. The brands and companies that the instructors of goldenassets are working or have worked, have no relation what so ever with <b class="per-title-highlight">GoldenAssets</b>
+            </p>            
+        </div>
+    </section>
+
+
+    <p  style="background-color: #222; color: white; padding: 20px; text-align: center; font-size: 10px;">
+        ©️ 2021 goldenassets.in All rights reserved.
+    </p>
+
+    <!-- modal on click -->
+    <!-- <div id="mdlSample" [hidden]="IsmodelShow" class="modal-backdrop fade in mt-15" role="dialog" [ngStyle]="{'display': mdlSampleIsOpen ? 'block' : 'none', 'opacity': 1}" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+              <h4 class="modal-title text-heading mt-5 align-content-between ml-5" id="exampleModalLabel">Get a Callback</h4>
+              <button type="button" class="close mt-5 mr-1" aria-label="Close" (click)="close()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+    
+    
+            <div class="bg-white rounded-lg  pl-lg-6 pr-lg-3 p-4">
+              <ul class="list-inline d-sm-flex align-items-sm-center mb-2">
+                <li class="list-inline-item badge badge-orange mr-2 ml-2">Contact Our Real Estate Experts </li>
+              </ul>
+    
+              <form [formGroup]="mobileform" (ngSubmit)="downloadMyFile();onSubmit()" class="m-2">
+                <div class="form-group mb-2">
+                  <input type="text" class="form-control form-control-lg border-0" formControlName="mobilename" placeholder="Name" (change)="nameChange($event)">
+                  <div class="form-control-feedback" *ngIf="mobilename.errors && (mobilename.dirty || mobilename.touched)">
+                    <p *ngIf="mobilename.errors.required" class="text-danger">Name is required</p>
+                    <p *ngIf="mobilename.errors.pattern" class="text-danger">Name is Invalid</p>
+                  </div>
+                </div>
+                <div class="form-group mb-2">
+                  <input type="email" class="form-control form-control-lg border-0" placeholder="Email" (change)="emailChange($event)" formControlName="mobileemail">
+                  <div class="form-control-feedback" *ngIf="mobileemail.errors && (mobileemail.dirty || mobileemail.touched)">
+                    <p *ngIf="mobileemail.errors.required" class="text-danger">Email is required</p>
+                    <p *ngIf="mobileemail.errors.pattern" class="text-danger">Invalid email address.</p>
+                  </div>
+                </div>
+                <div class="form-group mb-2">
+                  <input type="tel" class="form-control form-control-lg border-0" placeholder=" phone" (change)="phoneChange($event)" required formControlName="mobilephone">
+                  <div class="form-control-feedback" *ngIf="mobilephone.errors && (mobilephone.dirty || mobilephone.touched)">
+                    <p *ngIf="mobilephone.errors.required" class="text-danger">Phone Number is required</p>
+                    <p *ngIf="mobilephone.errors.pattern" class="text-danger">Phone number must contain  10 digits.</p>
+                  </div>
+                </div>
+                <div class="form-group mb-2">
+                  <textarea class="form-control border-0" rows="4" (change)="notesChange($event)" formControlName="mobiledescription" placeholder="I want to know more about..."></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-primary btn-lg btn-block rounded" [disabled]="!mobileform.valid" onclick="close()">Download Brochure</button>
+              </form>
+    
+    
+            </div>
+    
+    
+          </div>
+        </div>
+      </div> -->
+
+     
+      <!-- modal ends here -->
+    <script src="./landingPage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</body>
 </html>
