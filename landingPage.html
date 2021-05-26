@@ -18,7 +18,10 @@
     <!-- <script src="./landingPage.js"></script> -->
 
     <script>
-        var countDownDate = new Date("May 24, 2021 23:59:00").getTime();
+        date = new Date();
+        var countDownDate = date.setDate(date.getDate() + 1);
+        // var newDate =countDownDate.format("dddd, MMMM Do YYYY, h:mm:ss a");
+        console.log(countDownDate);
         var interval = setInterval(function () {
             var now = new Date().getTime();
             var timeleft = countDownDate - now;
@@ -26,7 +29,6 @@
             var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-
             document.getElementById("days").innerHTML = days;
             document.getElementById("hours").innerHTML = hours;
             document.getElementById("minutes").innerHTML = minutes;
@@ -40,18 +42,10 @@
     <!-- <div class="containers"> -->
     <section class="homepage">
         <div class="text-center">
-            <!-- <img src="assets/arrow.svg" width="15%" height="15%" style="float: right; margin-top: 8%;" alt=""> -->
-
             <p class=" p-4 homepageHeading">
-                <!-- 2-Day Performance <br> Marketing  <b>Kickstarter</b> <br>     Workshop -->
                 Gurgaon’s best <span class="per-title-highlight">real estate inventory</span> at lowest prices
             </p>
-
             <p class=" homePageSubHeading">
-                <!-- Learn secret strategies & tactics that <b>generated over INR 650 crores in <br> revenue</b>  for various big & small brands -->
-                <!-- Choose you dream house from an <b>exclusive inventory</b> of top acclaimed builders across
-                Gurgaon backed by <b>20+ years</b> of real estate consultants. -->
-
                 Top Real Estate Consultants in Gurgaon | <b>Expert guidance</b> to help you buy your dream home with assured valuation and timely possession built by <b>top builders</b> in Gurgaon.
             </p>
         </div>
@@ -71,11 +65,9 @@
                                 <img src="assets/inventory.png" width="15%" height="12%" alt="">&nbsp; Exclusive inventories
                             </div>
                         </div>
-
                     </div>
 
                     <div class="row ">
-
                         <div class="col-sm-3 mt-2 mb-3 buttons-cards">
                             <div class="text-center m-2">
                                 <img src="assets/rupee.png" width="15%" height="12%" alt="">&nbsp; Lowest prices in market
@@ -85,7 +77,6 @@
                             <div class="text-center m-2">
                                 <img src="assets/clock.png" width="15%" height="12%" alt="">&nbsp; 20+ years of
                                 experience
-
                             </div>
                         </div>                      
                     </div>
@@ -103,12 +94,12 @@
 
                 <div class="col-sm-4 video">
                     <div class="card youtubeVideo">
-                        <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0" height="250px"
+                        <iframe src="https://www.youtube.com/embed/uCmoKxoPpm8" frameborder="0" height="250px"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                     <div class="para">
-                        <p class="text-center fs-4 register">Register yourself before <span class="per-title-highlight">May 22, 2021</span> to unlock amazing
+                        <p class="text-center fs-4 register" >Register yourself before <span class="per-title-highlight" id="registerDate"> </span> to unlock amazing
                             discounts on top projects</p>
                             
                         <button class="unlockBtn w-100 p-3 rounded mt-0 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">Unlock your dream home</button>
@@ -134,26 +125,22 @@
             </div>
             <div class="row pt-5 pb-5 d-flex">
                 <div class="card col-sm-4 mb-2">
-                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/F2xEf0QFtys" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="card col-sm-4 mb-2">
-                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/qIJYiSeNIUQ" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="card col-sm-4 mb-2">
-                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/gJLHM0U91OA" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
             </div>
-
         </div>
-       
-
-
     </section>
 
     <section class="workshop">
@@ -162,17 +149,17 @@
         </p>
         <div class="row">
             <div class="col-sm-6">
-                <div class="cards mb-2 p-3" style="display: flex;">  
+                <div class="cards mb-2 p-3 d-flex">  
                     <div >
                         <img src="assets/selfUseHome.svg" width="100%"  alt="">
                     </div> 
                     <div style="padding: 10px;">
-                        <h5 class="card-title">&nbsp;  <b>Homebuyers, the end-users</b> </h5>
+                        <h5 class="card-title"> <b>Homebuyers, the end-users</b> </h5>
                         <p class="card-text">Who are Searching for their first family home in your budget by Gurgaon's Award-Winning developers?</p> 
                     </div>                                                
                 </div>
 
-                <div class="cards mb-2 p-3" style="display: flex;">
+                <div class="cards mb-2 p-3 d-flex">
                     <div>
                         <img src="assets/Buy-to-let investors.svg" width="100%" alt="">
                     </div>
@@ -184,7 +171,7 @@
             </div>
 
             <div class="col-sm-6">
-                <div class="cards mb-2 p-3" style="display: flex;">
+                <div class="cards mb-2 p-3 d-flex">
                     <div>
                         <img src="assets/homeForRentalIncome.svg" width="100%" alt="">
                     </div>
@@ -193,28 +180,22 @@
                         <p class="card-text">Who wants to buy a second home in order to generate steady rental income?</p>                    
                      </div>
                 </div>
-                <div class="cards mb-2 p-3" style="display: flex;">
+                <div class="cards mb-2 p-3 d-flex">
                     <div>
                         <img src="assets/Homebuyers, Luxury Homes.svg" width="60%"  alt="">
                     </div>
                     <div style="margin-left: -10%;">
                         <h5 class="card-title"><b>Homebuyers, Luxury Homes</b> </h5>
                         <p class="card-text">Who want a home that is layered in luxury?</p>
-                    </div>
-                     
-                    
+                    </div>                   
                 </div>
             </div>
-
         </div>
 
-        <button class="btns w-50 p-3 rounded mt-5 buttons" data-bs-toggle="modal" data-bs-target="#exampleModal" ><b>Kickstart your home search journey now!</b></button>
+        <button class="btns  p-3 rounded mt-5 buttons" data-bs-toggle="modal" data-bs-target="#exampleModal" ><b>Kickstart your home search journey now!</b></button>
 
-        <p class="text-center mt-3 register"> Register yourself before <span class="per-title-highlight">May 25, 2021</span> to unlock amazing discounts on top
-            projects</p>
-
-
-         
+        <p class="text-center mt-3 register"> Register yourself before <span class="per-title-highlight" id="registerDate1"></span> to unlock amazing discounts on top
+            projects</p>      
 
     </section>
 
@@ -337,8 +318,8 @@
             <span class="per-title-highlight fw-bold"> ₹1,00,000</span>
         </p>
 
-        <div class="coupon">
-            <div class="row">
+        <div class="coupon ">
+            <div class="row couponDisplay">
                 <div class="col-sm-8 mt-2 largeCoupon couponFirst">
                     <img src="assets/Large.png" alt="">
                     <div class="couponFirstText">
@@ -358,7 +339,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row couponDisplay">
                 <div class="col-sm-4 mt-2 couponFirst">
                     <img src="assets/Small.png" alt="">
                     <div class="couponFirstText">
@@ -441,7 +422,7 @@
                         <p>
                             Our consultants are industry experts and can show you more properties and save you thousands when you buy a home.
                         </p>  
-                    </div>           
+                    </div>         
                                          
                 </div>                
             </div>
@@ -497,7 +478,24 @@
         <p class="text-center fs-3" style="color: #333333; font-size: 200px; font-weight: 400; line-height: 28px;">
             Experiences shared by people who previously bought from us
         </p>
-        <div class="aboutUS" style=" margin: 0% 8% 0% 8%;">           
+        <div class="row pt-5 pb-5 d-flex">
+            <div class="card col-sm-4 mb-2">
+                <iframe src="https://www.youtube.com/embed/F2xEf0QFtys" frameborder="0" height="150%"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="card col-sm-4 mb-2">
+                <iframe src="https://www.youtube.com/embed/qIJYiSeNIUQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="card col-sm-4 mb-2">
+                <iframe src="https://www.youtube.com/embed/gJLHM0U91OA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- <div class="aboutUS" style=" margin: 0% 8% 0% 8%;">           
             <div class="row pt-5 pb-5 d-flex">
                 <div class="card col-sm-3">
                     <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
@@ -542,7 +540,7 @@
 
             </div>
 
-        </div>
+        </div> -->
 
         <button class="btns  p-3 rounded mt-5 buttons" data-bs-toggle="modal" data-bs-target="#exampleModal" >Kickstart your home search journey now!</button>
     </section>
@@ -654,7 +652,7 @@
 
         <button class="btns p-3 rounded mt-5 buttons" data-bs-toggle="modal" data-bs-target="#exampleModal">Kickstart your home search journey now!</button>
 
-        <p class="text-center mt-3 register"> Register yourself before <span class="per-title-highlight">May 25, 2021</span> to unlock amazing discounts on top
+        <p class="text-center mt-3 register"> Register yourself before <span class="per-title-highlight" id="registerDate2"></span> to unlock amazing discounts on top
             projects</p>
 
     </section>
@@ -664,7 +662,7 @@
         <p class="text-center text-white fs-1 meetOurConsultant">
             Meet your Consultants
         </p>
-        <div class="row gauravHarjit" style="margin-left: 15vw;">
+        <div class="row gauravHarjit" style="margin-left: 25%;">
 
             <div class="col-sm-12   m-1" style="width: 17rem;">
                 <img src="assets/Gaurav-Kapur_1.svg" class="card-img-top" alt="...">
@@ -718,37 +716,55 @@
                 <!-- <p>
                     Note: No exceptions would be made beyond the offer expiry date. The prices would go up and no free bonuses
                 </p> -->
-                <button type="submit" class="btns  p-3 rounded mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 75%; margin-left: 12.5%;">Register Now</button>
+                <button type="submit" class="btns  p-3 rounded mt-3 mb-3 registerNow" data-bs-toggle="modal" data-bs-target="#exampleModal" >Register Now</button>
             </div>
             <div class="col-sm-6 ml-5 whatWillYouGet">
                 <p class="per-title-highlight fs-3">What you’ll get...</p>
-                 <div>                    
-                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
-                </div>
-                 <hr>  
-                 <div>                    
-                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        Exclusive offers on booking amounts 
+                    </div>
                 </div> <hr>
-                <div>                    
-                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        Negotiating a good deal with developers 
+                    </div>
                 </div> <hr>
-                
-
-                <p class="per-title-highlight fs-3">And bonuses too...</p>
-                <div>                    
-                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        Post-sales support 
+                    </div>
                 </div> <hr>
-                <div>                    
-                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        Weekly updates on popular real estate trends 
+                    </div>
                 </div> <hr>
-                <div>                    
-                    <p> <img src="assets/tick.svg" alt=""> Internet's first 'Acquisition Channels Pros & Cons</p>
-                </div> <hr>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        A Bulletproof commercial investing toolkit 
+                    </div>
+                </div>           
                
             </div>
         </div>
 
-        <p class="text-center fs-1 mt-5">
+        <!-- <p class="text-center fs-1 mt-5">
             Frequently Asked Questions
         </p>
         <div class="accordion" id="accordionExample">
@@ -811,7 +827,7 @@
             </div>
         </div>
 
-        <button type="button"  class="btns p-3 rounded mt-5 buttons" data-bs-toggle="modal" data-bs-target="#exampleModal">Kickstart your home search journey now!</button>       
+        <button type="button"  class="btns p-3 rounded mt-5 buttons" data-bs-toggle="modal" data-bs-target="#exampleModal">Kickstart your home search journey now!</button>        -->
 
     </section>
 
@@ -821,18 +837,13 @@
             <p style="font-size: 12px;">
                 For any support, please mail to care@goldenassets.in Our support team will get back to you within 24 hours. The brands and companies that the instructors of goldenassets are working or have worked, have no relation what so ever with <b class="per-title-highlight">GoldenAssets</b>
             </p>            
-        </div>
-        
+        </div>        
     </section>
-
-
     <p  style="background-color: #222; color: white; padding: 20px; text-align: center; font-size: 10px;">
         ©️ 2021 goldenassets.in All rights reserved.
-    </p>
+    </p>    
 
-    
-
-      <form  name="simpleModal" method="post" action="http://localhost:3000/landingPage">
+      <form  name="myform" method="post"  action="https://api.goldenassets.in/landingPage">
         <div class="modal fade" tabindex="-1" id="exampleModal">
         <div class="modal-dialog modal-lg">
         
@@ -840,72 +851,82 @@
           <div class="modal-content">
             <div class="modal-header">
               
-              <h4 class="modal-title">Modal Header</h4>
+              <h4 class="modal-title fw-bold">Enter Your Details</h4>
               
               <button type="button" class="close" data-bs-dismiss="modal" onclick="close();">&times;</button>
             </div>
             <div class="modal-body">
-            <div class="wrap center">
-            <div class="wrap-label">
-               <label for="name" class="per-title-highlight">Full Name</label>
-               <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
-            </div>
-            <input type="text" name="name" id="name" required>
-          </div>
-          <div class="wrap center">
-            <div class="wrap-label">
-               <label for="email">Email</label>
-               <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
-            </div>
-            <input type="email" name="email" id="email" required>
-          </div>
-          <div class="wrap center">
-            <div class="wrap-label">
-               <label for="phone">Phone Number</label>
-               <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
-            </div>
-            <input type="number" name="phone" id="phone" required>
-          </div>
-          <div class="wrap center">
-            <div class="wrap-label">
-               <label for="notes">Notes</label>
-               <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
-            </div>
-            <input type="text" id="notes" name="notes">
-          </div>        
-    
-          <div class="wrap center">   
-          <div class="wrap-label">
-               <label for="propertyType">Property Type</label>
-               <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
-            </div>     
-          <select name="propertyType" id="propertyType">
-          <option value="Residential">Residential</option>
-          <option value="Commercial">Commercial</option>    
-         </select>
-          </div>
+                <div class="container">
+                   
+                    <div class="content">
+                      <!-- <form name="simpleModal" method="post" action="http://localhost:3000/landingPage"> -->
+                        <div class="user-details" >
+                            <div class="col-xs-12 modalForm">
+                                <div class="input-box">
+                                    <span class="details fw-bold">Full Name</span>
+                                    <input type="text" placeholder="Enter your name" name="name" pattern="[a-zA-Z ]+" minlength="3" maxlength="30" required>
+                                  </div>
+                                  <div class="input-box">
+                                    <span class="details fw-bold">Email</span>
+                                    <input type="email" placeholder="Enter your email" name="email" pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}" required>
+                                  </div>
+                            </div>
+                            <div class="modalForm">
 
-          <div class="wrap center">   
-            <div class="wrap-label">
-                 <label for="Budget">Budget</label>
-                 <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
-              </div>     
-            <select name="Budget" id="Budget">
-                <option value="25L-50L">25L-50L</option>
-                <option value="75L-1Cr">25L-50L</option>
-                 <option value="1Cr-1.5Cr">1Cr-1.5Cr</option> 
-                  <option value="1.5Cr-2Cr">1.5Cr-2Cr</option>
-                 <option value="2Cr-2.5Cr">2Cr-2.5Cr</option>   
-           </select>
-            </div>
-    
-        
-         
-         
-    
-    
-          <button type="submit" class="btn btn-primary" style="margin-left:40%">Submit</button>
-          
+                                <div class="input-box">
+                                    <span class="details fw-bold">Phone Number</span>
+                                    <input type="text" placeholder="Enter your phone number" name="phone" pattern="\d{10}" minlength="10" maxlength="10" required>
+                                  </div>
+                                  <div class="input-box">
+                                    <span class="details fw-bold">Additional Notes</span>
+                                    <input type="text" placeholder="Enter notes" name="notes" >
+                                  </div>
+                            </div>    
+                           
+                            <div class="modalForm">
+
+                                <div class="budget-details" >   
+                                    <div >
+                                         <label for="budget-title" style="font-weight: bold;">Budget</label>
+                                         <!-- <p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p> -->
+                                      </div>     
+                                    <select name="budget" id="Budget">
+                                        <option value="25L-50L">50L-75L</option>
+                                        <option value="75L-1Cr">75L-1Cr</option>
+                                         <option value="1Cr-1.5Cr">1Cr-1.5Cr</option> 
+                                          <option value="1.5Cr-2Cr">1.5Cr-2Cr</option>
+                                         <option value="2Cr-2.5Cr">2Cr-2.5Cr</option>   
+                                   </select>
+                                    </div>
+                                <div class="property-details">
+                                    <input type="radio" name="propertyType" value="Residential" id="dot-1">
+                                    <input type="radio" name="propertyType" value="Commercial" id="dot-2">
+                                    <!-- <input type="radio" name="propertyType" id="dot-3"> -->
+                                    <span class="property-title fw-bold">Property Type</span>
+                                    <div class="propertyCategory">
+                                      <label for="dot-1">
+                                      <span class="dot one"></span>
+                                      <span class="residential">Residential</span>
+                                    </label>
+                                    <label for="dot-2">
+                                      <span class="dot two"></span>
+                                      <span class="commercial">Commercial</span>
+                                    </label>                         
+                                  </div>
+                                  </div>
+                                 
+                            </div>                         
+                        </div>
+                        
+                       
+                      
+                        <div class="button">
+                          <input type="submit" value="Register">
+                          <!-- <button class="btn btn-primary">Submit</button> -->
+                        </div>
+                      <!-- </form> -->
+                    </div>
+                  </div>
             </div>
            
           </div>
@@ -921,5 +942,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+        <script>
+             stringDate = new Date().toDateString();
+         document.getElementById('registerDate').innerHTML=stringDate;
+         document.getElementById('registerDate1').innerHTML=stringDate;
+         document.getElementById('registerDate2').innerHTML=stringDate;
+
+
+        </script>
+
+        <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '705423603476044');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=705423603476044&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </body>
 </html>
