@@ -1,7 +1,149 @@
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  width: 200px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 90%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.budget-details{
+    width: 100%;
+}
+.property-details{
+    margin-left: -53%;margin-right: 15%;
+}
+.budget-details select{
+    height: 45px;
+    width: 42%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background: white;
+  }
 
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ form .property-details .property-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .budget-details .budget-title{
+    font-size: 20px;
+    font-weight: 500;
+   }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ 
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+  #dot-3:checked ~ .category label .three,
+ #dot-4:checked ~ .category label .four,
+ #dot-6:checked ~ .category label .six,
+ #dot-7:checked ~ .category label .seven,
+ #dot-5:checked ~ .category label .five{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+
+ form .propertyCategory{
+    display: flex;
+    width: 90%;
+    margin: 14px 0 ;
+    justify-content: space-between;
+  }
+  
+  form .propertyCategory label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  form .propertyCategory label .dot{
+   height: 18px;
+   width: 18px;
+   border-radius: 50%;
+   margin-right: 10px;
+   background: #d9d9d9;
+   border: 5px solid transparent;
+   transition: all 0.3s ease;
+ }
+  #dot-1:checked ~ .propertyCategory label .one,
+  #dot-2:checked ~ .propertyCategory label .two{
+    background: #9b59b6;
+    border-color: #d9d9d9;
+  }
+
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
 
 body{
     font-family: "DM Sans", sans-serif;
+}
+
+.modalForm{
+    display: flex;
 }
 
 /* sectct box css */
@@ -55,21 +197,15 @@ body{
 
 /* form css srart here */
 .modal-header {    
-    background-color: #c8eadf;
-}
-
-.modal-title {   
-    margin-left: 79px;
+    background-color: #fff;
+    /* float: left; */
 }
 
 .modal-body {
     position: relative;
     flex: 1 1 auto;
     padding: 3rem 1rem;
-    background-color: #c8eadf;
-    /* background-image:linear-gradient(
-        75deg
-        , #FDC830, #F37335, #f12711, #f5af19);; */
+    background-color: #fff;    
 }
 
 .wrap{width:300px;}
@@ -78,58 +214,6 @@ body{
  transform:translateY(-50%);
  position:relative;
  margin:auto;}
-
-/* input{
-  display:block;
-    width: 300px;
-    padding: 15px 0 15px 12px;
-    font-family: "Arvo";
-    font-weight: 400;
-    color: #377D6A;
-    background: #fff;
-    border: none;
-    outline: none;
-    color: #000;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 4px;
-    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px  1px rgba(255,255,255,0.2);
-    text-indent: 60px;
-    transition: all .3s ease-in-out;
-    position: relative;
-    font-size: 21px;
-    margin-top: 14px;
-}
-input:focus{
-    text-indent: 12px;
-    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
-}
-
-select{
-    display:block;
-      width: 300px;
-      padding: 15px 0 15px 12px;
-      font-family: "Arvo";
-      font-weight: 400;
-      color: #377D6A;
-      background: #fff;
-      border: none;
-      outline: none;
-      color: #000;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-      border: 1px solid rgba(0,0,0,0.3);
-      border-radius: 4px;
-      box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px  1px rgba(255,255,255,0.2);
-      text-indent: 60px;
-      transition: all .3s ease-in-out;
-      position: relative;
-      font-size: 21px;
-      margin-top: 14px;
-  }
-  select:focus{
-      text-indent: 12px;
-      box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
-  } */
 
 
 label{
@@ -302,10 +386,7 @@ margin-right: 10px !important;
     border-radius: 16px;
 }
 
-.buttons-cards{
-    /* width: 168px !important;
-    font-size: 10px !important;
-    padding: 5px; */
+.buttons-cards{    
     background: white;width: 17rem;height: 50px; border-radius: 16px;border: none; margin-left: 5%;cursor:  context-menu;
     font-size: 16px; line-height: 32px;font-weight: 700;color: #333333;
 }
@@ -322,8 +403,6 @@ margin-right: 10px !important;
     background-image: linear-gradient(126deg,#2ac294,#0e8f84);
     color: white;
 }
-
-
 
 .far{
     color: #0e8f84;
@@ -344,14 +423,6 @@ margin-right: 10px !important;
 .workshop .fas{
     color: #0e8f85;
 }
-
-/* .far{
-    color: green;
-}
-
-.card{
-    border-radius: 20px;
-} */
 
 .afterRegistering{
     padding:4% 12%;
@@ -428,6 +499,25 @@ margin-right: 10px !important;
  font-weight:bold;
  border-radius: 6px;
 }
+
+.homepage span #registerDate{
+    position: relative;
+    width: 15vw;
+    height: 15vh;
+    line-height: 100px;
+    text-align: center;
+    /* background: #333; */
+    background-image: linear-gradient(133deg,#0f8f85,#27bd93);
+    color: #fff;
+    margin:0 15px;
+    font-size: 69px;
+    font-weight:bold;
+    border-radius: 6px;
+   }
+
+   /* .homepage span#registerDate:before{
+    content: 'Days';
+} */
 
 .clockdiv div:before{
     content: '';
@@ -520,8 +610,8 @@ margin-right: 10px !important;
 }
 
 .check{
-    height: 30px;
-    width: 30px;
+    height: 30px !important;
+    width: 30px !important;
     margin-top: 15px;   
     border: 1px solid #9dd6c4;
     color: #2ac294;
@@ -584,6 +674,31 @@ margin-right: 10px !important;
 
 @media (min-width:300px) and (max-width:449.99px){
 
+    .modalForm{
+        display: block !important;
+    }
+
+    .budget-details{
+        width: 225% !important;
+    }
+    .property-details{
+        margin-left: 0%;
+    }
+
+    .formBudget{
+        display: inline-block !important;
+        width: 5rem !important;
+    }
+
+    input{
+        width: 220% !important;
+
+    }
+
+    form .button input{
+        width: 100% !important;
+    }
+
     .homepage{
         padding: 4% 4%;
     }
@@ -623,7 +738,7 @@ margin-right: 10px !important;
     }
 
     .consultantCard{
-        margin-left: 7%;
+        margin-left: 3.5%;
     }
 
     .buildersLargeImg{
@@ -691,6 +806,13 @@ margin-right: 10px !important;
         /* max-height:240px !important; */
     }
 
+    .workshop {
+        padding: 4% 3%;
+    }
+
+    .coupons {
+        padding: 4% 6%;
+    }
     
     .checkboxes{
         padding:4% 6%;
@@ -769,6 +891,11 @@ margin-right: 10px !important;
        .gauravHarjit{
            margin-left: 12% !important;
        }
+       .registerNow{
+           width: 75%;
+           margin-left: 12.5%;
+           font-size: 20px;
+       }
        .why{
            text-align: justify !important;
            font-size: 16px !important;
@@ -802,7 +929,7 @@ margin-right: 10px !important;
         margin-top: 8%;
     }
     .largeCoupon img{
-        width: 100% !important;
+        width: 95% !important;
         height: 150px;
     }
 }
@@ -814,6 +941,23 @@ margin-right: 10px !important;
     .homepage{
         padding: 4% 4%;
     }
+    .budget-details{
+        width: 239.5% !important;
+    }
+    .property-details{
+        margin-left: 0%;
+    }
+    .modalForm{
+        display: block !important;
+    }
+    input{
+        width: 220% !important;
+
+    }
+
+    form .button input{
+        width: 100% !important;
+    }
 
     .buttons{
         width: 100% !important; 
@@ -822,9 +966,23 @@ margin-right: 10px !important;
         /* margin-top: -0% !important; */
     }
 
+    .unlockBtn{
+        margin-left: 20% !important;
+    }
+
     .largeCoupon img{
-        width: 73%;
+        width: 73% !important;
         height: 150px;
+    }
+
+    .couponFirstText {
+        position: absolute;
+        top: 10px;
+        left: 93px !important;
+    }
+
+    .believeThemHeading{
+        font-size: 40px;
     }
 
     .homepageHeading{
@@ -849,7 +1007,7 @@ margin-right: 10px !important;
 
     .buttons-cards{
         width: 204px !important;
-        font-size: 13px !important;
+        font-size: 12px !important;
         padding: 5px;
         margin-left: 9%;
     }
@@ -971,7 +1129,7 @@ margin-right: 10px !important;
 
     .card-img-tops {
         width: 139% !important;
-        margin-left: 32% !important;
+        margin-left: 19% !important;
     }
     .unlockbonus{
         font-size: 23px !important;
@@ -987,6 +1145,28 @@ margin-right: 10px !important;
 
 
 @media (min-width:601px) and (max-width:850.99px){
+
+    .register {
+        /* padding: 4% 5%; */
+        /* font-size: 18px !important;
+        line-height: 22px !important;
+        font-weight: 700 !important;
+        color: #00747b !important; */
+        margin-left: -150px !important;
+    }
+
+    .workshop .register{
+        margin-left: 0px !important;
+    }
+
+    .GoldenCards .cards {
+        background-color: hsla(0,0%,100%,.1);
+        color: white;
+        border-radius: 16px;
+        padding: 10px;
+        min-height: 324px !important;
+        max-height: 324px !important;
+    }
 
     .homepage{
         padding: 4% 4%;
@@ -1019,16 +1199,23 @@ margin-right: 10px !important;
         margin-left: 4.5vw;
     }
 
-    .youtubeVideo{        
+    .youtubeVideo {
         border: 15px solid white;
-        margin: 2% 6%;        
+        margin: 2% 6%;
+        height: 200px;
+        margin-left: -131px;
     }
 
-    .buttons-cards{
-        width: 204px !important;
+    .buttons-cards {
+        width: 245px !important;
         font-size: 13px !important;
         padding: 5px;
-        margin-left: 9%;
+        margin-left: 15%;
+    }
+
+    .unlockBtn{
+        width: 403px !important;
+        margin-left: -323px;
     }
 
     /* .cardVideo{
@@ -1057,14 +1244,16 @@ margin-right: 10px !important;
         justify-content: center; */
     }
 
-    .video{   
-        padding: 8% 0%;     
-        order: -1;
+    .believeThemHeading {
+        font-size: 47px;
     }
-
-    .register {
-        padding: 4% 5%;
-        font-size: 16px !important;
+    .checkboxes .boxes .row .card-title {        
+        max-height: 100px;
+        min-height: 100px;
+    }
+    
+    .checkboxes .register {
+        margin-left: 0% !important;
     }
 
     .afterRegistering{
@@ -1133,14 +1322,224 @@ margin-right: 10px !important;
     .buildersLargeImg1{
         margin: 0% 4%;
     }
-     .card-img-top {
+    .card-img-top {
         width: 139% !important;
-        margin-left: -12% !important;
+        margin-left: 9% !important;
+    }
+    .couponDisplay{
+        display: block !important;
     }
 
     .card-img-tops {
-        width: 139% !important;
-        margin-left: 32% !important;
+        width: 161% !important;
+        margin-left: 48% !important;
+        margin-top: 27%;
+    }
+    .workshop .cards {
+        background-color: #c8eadf;
+        max-height: 200px;
+        min-height: 200px;
+        border-radius: 10px;
+    }
+    .unlockbonus{
+        font-size: 23px !important;
+    }
+    .time-runing-out{
+        font-size: 18px !important;
+    }
+    .faq{
+        padding:4% 4%;
+        background-color: #c8eadf;
+    }
+}
+
+@media (min-width:851px) and (max-width:1100.99px){
+
+   .homepage .register {        
+        margin-left: -315px !important;
+    }
+
+    .workshop .register{
+        margin-left: 0px !important;
+    }
+
+    .GoldenCards .cards {
+        min-height: 252px !important;
+    max-height: 252px !important;
+    }
+
+    .homepage{
+        padding: 4% 4%;
+    }
+
+    .buttons {
+        width: 76% !important;
+        margin-left: 12.5% !important;
+        font-size: 15px !important;
+        /* margin-top: -0% !important; */
+    }
+
+    .largeCoupon img{
+        width: 73%;
+        height: 150px;
+    }
+
+    .homepageHeading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    color: #333333;
+    font-weight: bold;
+    }
+    .homePageSubHeading{
+        text-align:center;
+        font-size: 16px !important;
+        width: 92%;
+        margin-left: 4.5vw;
+    }
+
+    .youtubeVideo {       
+    margin-left: -226px;
+    margin-right: 35%;
+    }
+
+    .buttons-cards {
+        width: 245px !important;
+        font-size: 13px !important;
+        padding: 5px;
+        margin-left: 15%;
+    }
+
+    .unlockBtn{
+        width: 403px !important;
+        margin-left: -381px;
+    }
+
+    /* .cardVideo{
+        display: flex;
+        flex-direction: column;
+        /* margin: 2%; 
+    } */
+
+    .buildersLargeImg{
+        display: flex;
+    }
+
+    .buildersSmallImg{
+        display: none;
+    }
+
+    .homepage .btn {       
+        width: 75% !important;
+        margin-left: 14%;
+    }
+
+    .homepage .cards{
+        margin: auto 1vw;
+        width: 37rem;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .believeThemHeading {
+        font-size: 47px;
+    }
+    .checkboxes .boxes .row .card-title {        
+        max-height: 100px;
+        min-height: 100px;
+    }
+    
+    .checkboxes .register {
+        margin-left: 0% !important;
+    }
+
+    .afterRegistering{
+        padding:6% 8%;
+        background-color: #f5f5f5;
+    }
+
+    .whyGolden{
+        padding:6% 8%;
+        /* background-color: #032d30;
+        color: white; */
+    }
+
+     .paragraph .cards{
+        background-color: hsla(0,0%,100%,.1);
+        color: #27bd93;
+        border-radius: 16px;
+        padding: 10px;
+        min-height:100px;
+        font-size:18px;
+        max-width:85%;
+        margin-left: 7.5%;
+    }
+    
+
+    .clockdiv div:before{       
+        font-size: 20px !important;        
+    }
+    .clockdiv div {
+        position: relative;
+        width: 15vw;
+        height: 7vh;       
+        font-size: 57px;
+    }
+       .clockdiv button{
+           margin-top: 20%;
+       }
+
+      
+
+       .coupon img{
+         /* vertical-align:middle; */
+         /* align-content: center; */
+         margin: auto 12.5%;
+       }
+
+       .whatWillYouGet{
+        margin-top: 0% !important;
+    }
+
+    .gauravHarjit{
+        margin-left: 12% !important;
+    }
+    .why{
+        text-align: justify !important;
+        font-size: 16px !important;
+    }
+    .buildersLargeImg1{
+        margin: 0% 4%;
+    }
+    .card-img-top {
+        width: 105% !important;
+        margin-left: 0% !important;
+    }
+    /* .couponDisplay{
+        display: block !important;
+    } */
+
+    .couponFirstText {
+        position: absolute;
+        top: 10px;
+        left: 72px;
+    }
+    .coupons {
+        padding: 4% 5%;
+        background-color: #c8eadf;
+    }
+
+    .card-img-tops {
+        width: 100% !important;
+    margin-left: 50% !important;
+    margin-top: 56%;
+    }
+    .workshop .cards {
+        background-color: #c8eadf;
+        max-height: 200px;
+        min-height: 200px;
+        border-radius: 10px;
     }
     .unlockbonus{
         font-size: 23px !important;
